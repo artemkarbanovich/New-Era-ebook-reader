@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="Top-leftPannel_Color" Color="#84B153"/>
+    <SolidColorBrush x:Key="NavigationText_Color" Color="White"/>
+    <SolidColorBrush x:Key="LogOutText_Color" Color="DarkSlateGray"/>
+    <SolidColorBrush x:Key="MainPannel_Color" Color="#f2f3f4"/>
+    <SolidColorBrush x:Key="BooksBorderBrush_Color" Color="Black"/>
+    <SolidColorBrush x:Key="AddBook_Color" Color="White"/>
+    <SolidColorBrush x:Key="DeleteBook_Color" Color="DarkRed"/>
+    <SolidColorBrush x:Key="SearchBox_BgColor" Color="White"/>
+    <SolidColorBrush x:Key="SearchBox_UlColor" Color="#4A751C"/>
+    <SolidColorBrush x:Key="BooksList_Color" Color="Black"/>
+    <SolidColorBrush x:Key="ButtonSaveSettings_Color" Color="#4A751C"/>
+    <SolidColorBrush x:Key="ButtonSaveSettings_TextColor" Color="White"/>
+    <SolidColorBrush x:Key="ButtonSaveSettings_BorderBrushColor" Color="Transparent"/>
+    <SolidColorBrush x:Key="ThemeBox_BgColor" Color="#f2f3f4"/>
+    <SolidColorBrush x:Key="CurrentSettings_TextColor" Color="Black"/>
+    <SolidColorBrush x:Key="ButtonDeleteAccount_BgColor" Color="DarkRed"/>
+    <SolidColorBrush x:Key="TxtDoc_TextColor" Color="#444444"/>
+    <SolidColorBrush x:Key="TxtDoc_BgColor" Color="#f2f3f4"/>
+</ResourceDictionary>

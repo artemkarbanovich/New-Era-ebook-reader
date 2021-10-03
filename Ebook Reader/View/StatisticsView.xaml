@@ -1,0 +1,501 @@
+﻿<UserControl x:Class="Ebook_Reader.View.StatisticsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ebook_Reader.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="{DynamicResource MainPannel_Color}">
+        <ScrollViewer>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="140"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="175"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="15"/>
+                </Grid.RowDefinitions>
+
+                
+                <!--Статистика по книгам в библиотеке-->
+                <Grid Grid.Column="0" Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="7.5"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+                            <Border BorderThickness="1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Text="Статистика по книгам в библиотеке" FontFamily="{DynamicResource Font}" Foreground="{DynamicResource CurrentSettings_TextColor}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+
+                        <Grid Grid.Row="2" Grid.Column="1">
+                            <Border BorderThickness="1,0,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="Количество книг" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="2">
+                            <Border BorderThickness="0,0,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding CountBooks, Mode=OneWay}"/>
+                            <Run Text="шт."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="3">
+                            <Border BorderThickness="0,0,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding CountBooksPercent, Mode=OneWay}"/>
+                            <Run Text="%"/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+
+                        <Grid Grid.Row="3" Grid.Column="1">
+                            <Border BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="Из них txt-формат" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="2">
+                            <Border BorderThickness="0,1,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                             <Run Text="{Binding TxtCountBooks, Mode=OneWay}"/>
+                            <Run Text="шт."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="3">
+                            <Border BorderThickness="0,1,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding TxtCountBooksPercent, Mode=OneWay}"/>
+                            <Run Text="%"/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+
+                        <Grid Grid.Row="4" Grid.Column="1">
+                            <Border BorderThickness="1,1,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="Из них pdf-формат" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="2">
+                            <Border BorderThickness="0,1,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding PdfCountBooks, Mode=OneWay}"/>
+                            <Run Text="шт."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="3">
+                            <Border BorderThickness="0,1,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding PdfCountBooksPercent, Mode=OneWay}"/>
+                            <Run Text="%"/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <!--Статистика по книгам за все время-->
+                <Grid Grid.Column="1" Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="7.5"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="15"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+                            <Border BorderThickness="1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Text="Статистика по книгам за все время" FontFamily="{DynamicResource Font}" Foreground="{DynamicResource CurrentSettings_TextColor}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+
+                        <Grid Grid.Row="2" Grid.Column="1">
+                            <Border BorderThickness="1,0,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="Общее количество книг" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="2">
+                            <Border BorderThickness="0,0,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding TotalCountBooks, Mode=OneWay}"/>
+                            <Run Text="шт."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="3">
+                            <Border BorderThickness="0,0,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding TotalCountBooksPercent, Mode=OneWay}"/>
+                            <Run Text="%"/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+
+                        <Grid Grid.Row="3" Grid.Column="1">
+                            <Border BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="Из них txt-формат" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="2">
+                            <Border BorderThickness="0,1,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding TxtTotalCountBooks, Mode=OneWay}"/>
+                            <Run Text="шт."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="3">
+                            <Border BorderThickness="0,1,1,0" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding TxtTotalCountBooksPercent, Mode=OneWay}"/>
+                            <Run Text="%"/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+
+                        <Grid Grid.Row="4" Grid.Column="1">
+                            <Border BorderThickness="1,1,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="Из них pdf-формат" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="2">
+                            <Border BorderThickness="0,1,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding PdfTotalCountBooks, Mode=OneWay}"/>
+                            <Run Text="шт."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="3">
+                            <Border BorderThickness="0,1,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding PdfTotalCountBooksPercent, Mode=OneWay}"/>
+                            <Run Text="%"/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <!--Статистика чтения по времени-->
+                <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="15"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="1" Grid.ColumnSpan="5">
+                            <Border BorderThickness="1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Text="Статистика чтения по времени" FontFamily="{DynamicResource Font}" Foreground="{DynamicResource CurrentSettings_TextColor}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+
+
+                        <!--За все время-->
+                        <Grid Grid.Row="1" Grid.Column="1">
+                            <Border BorderThickness="1,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="За все время" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="2">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadAllTime, StringFormat=dd, Mode=OneWay}"/>
+                            <Run Text="д."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="3">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadAllTime, StringFormat=hh, Mode=OneWay}"/>
+                            <Run Text="ч."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="4">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadAllTime, StringFormat=mm, Mode=OneWay}"/>
+                            <Run Text="мин."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="5">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadAllTime, StringFormat=ss, Mode=OneWay}"/>
+                            <Run Text="сек."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+
+
+                        <!--За год-->
+                        <Grid Grid.Row="2" Grid.Column="1">
+                            <Border BorderThickness="1,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="За год" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="2">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadMonth, StringFormat=dd, Mode=OneWay}"/>
+                            <Run Text="д."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="3">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadYear, StringFormat=hh, Mode=OneWay}"/>
+                            <Run Text="ч."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="4">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadYear, StringFormat=mm, Mode=OneWay}"/>
+                            <Run Text="мин."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="5">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadYear, StringFormat=ss, Mode=OneWay}"/>
+                            <Run Text="сек."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+
+
+                        <!--За месяц-->
+                        <Grid Grid.Row="3" Grid.Column="1">
+                            <Border BorderThickness="1,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="За месяц" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="2">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadMonth, StringFormat=dd, Mode=OneWay}"/>
+                            <Run Text="д."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="3">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadMonth, StringFormat=hh, Mode=OneWay}"/>
+                            <Run Text="ч."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="4">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadMonth, StringFormat=mm, Mode=OneWay}"/>
+                            <Run Text="мин."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="5">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadMonth, StringFormat=ss, Mode=OneWay}"/>
+                            <Run Text="сек."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+
+
+                        <!--За неделю-->
+                        <Grid Grid.Row="4" Grid.Column="1">
+                            <Border BorderThickness="1,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="За неделю" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="2">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadWeek, StringFormat=dd, Mode=OneWay}"/>
+                            <Run Text="д."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="3">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadWeek, StringFormat=hh, Mode=OneWay}"/>
+                            <Run Text="ч."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="4">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadWeek, StringFormat=mm, Mode=OneWay}"/>
+                            <Run Text="мин."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="5">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadWeek, StringFormat=ss, Mode=OneWay}"/>
+                            <Run Text="сек."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+
+
+                        <!--За сегодня-->
+                        <Grid Grid.Row="5" Grid.Column="1">
+                            <Border BorderThickness="1,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" Text="За сегодня" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="5" Grid.Column="2">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Text="—" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="5" Grid.Column="3">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadToday, StringFormat=hh, Mode=OneWay}"/>
+                            <Run Text="ч."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="5" Grid.Column="4">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadToday, StringFormat=mm, Mode=OneWay}"/>
+                            <Run Text="мин."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="5" Grid.Column="5">
+                            <Border BorderThickness="0,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                                <TextBlock Margin="10,0,0,0" TextAlignment="Center" Grid.Row="2" FontSize="13" Foreground="{DynamicResource CurrentSettings_TextColor}" FontFamily="{DynamicResource Font}" VerticalAlignment="Center">
+                            <Run Text="{Binding ReadToday, StringFormat=ss, Mode=OneWay}"/>
+                            <Run Text="сек."/>
+                                </TextBlock>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <!--Список чтения за сегодня-->
+                <Grid Grid.Row="3" Grid.ColumnSpan="2">
+                    <Border Margin="15,0,15,0" BorderThickness="1,0,1,1" BorderBrush="{DynamicResource BooksBorderBrush_Color}">
+                        <ListBox HorizontalContentAlignment="Stretch" ItemsSource="{Binding DailyStatistics}" SelectedItem="{Binding Statistics}">
+                            <ListBox.Template>
+                                <ControlTemplate TargetType="ItemsControl">
+                                    <Border>
+                                        <ItemsPresenter />
+                                    </Border>
+                                </ControlTemplate>
+                            </ListBox.Template>
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel />
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="{x:Type ListBoxItem}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                                <Border Height="30" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+                                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsSelected" Value="true">
+                                                        <Setter Property="Background" Value="{x:Null}"/>
+                                                        <Setter Property="Foreground" Value="{x:Null}"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="3.5*"/>
+                                            <ColumnDefinition Width="1.5*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        
+                                        <Grid VerticalAlignment="Center" Grid.Column="0">
+                                            <TextBlock FontFamily="{DynamicResource Font}" HorizontalAlignment="Left" Margin="6,0,0,0" Foreground="{DynamicResource BooksList_Color}" Text="{Binding Path=BookName}"/>
+                                        </Grid>
+                                        <Grid VerticalAlignment="Center" Grid.Column="1">
+                                            <TextBlock FontFamily="{DynamicResource Font}" Foreground="{DynamicResource BooksList_Color}" HorizontalAlignment="Center" Text="{Binding Path=BookFormat}"/>
+                                        </Grid>
+                                        <Grid Grid.Row="0" VerticalAlignment="Center" Grid.Column="2">
+                                            <TextBlock FontFamily="{DynamicResource Font}" HorizontalAlignment="Center" Foreground="{DynamicResource BooksList_Color}" Text="{Binding Path=ReadTime, StringFormat=hh\\:mm\\:ss}"/>
+                                        </Grid>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Border>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

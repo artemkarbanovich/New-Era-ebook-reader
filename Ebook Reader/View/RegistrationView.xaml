@@ -1,0 +1,78 @@
+﻿<Window x:Class="Ebook_Reader.View.RegistrationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Ebook_Reader.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Icon="../Image/AppIcon.png"
+        Title="Регистрация"
+        Height="440" Width="450" ResizeMode="NoResize">
+    <Window.Resources>
+        <ControlTemplate x:Key="validationFailed">
+            <Border BorderBrush="OrangeRed" BorderThickness="1.5">
+                <AdornedElementPlaceholder/>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
+    
+    <Grid Background="#BAD899">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        
+        <Grid Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left">
+            <Button Command="{Binding signInWindow}" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" materialDesign:RippleAssist.Feedback="{x:Null}">
+                <materialDesign:PackIcon Kind="ArrowBack" Width="25" Height="25" Foreground="Black"/>
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <TextBox Text="{Binding Login, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Validation.ErrorTemplate="{StaticResource validationFailed}" ToolTip="{Binding ErrorCollection[Login]}" FontSize="15" Width="300" Background="#84B153" materialDesign:TextFieldAssist.UnderlineBrush="#4A751C" materialDesign:HintAssist.Hint="Логин" CaretBrush="Black" Padding="4"/>
+        </Grid>
+
+        <Grid Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <TextBox Text="{Binding FirstName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Validation.ErrorTemplate="{StaticResource validationFailed}" ToolTip="{Binding ErrorCollection[FirstName]}" FontSize="15" Width="300" Background="#84B153" materialDesign:TextFieldAssist.UnderlineBrush="#4A751C" materialDesign:HintAssist.Hint="Имя" CaretBrush="Black" Padding="4"/>
+        </Grid>
+
+        <Grid Grid.Row="6" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <TextBox Text="{Binding SecondName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Validation.ErrorTemplate="{StaticResource validationFailed}" ToolTip="{Binding ErrorCollection[SecondName]}" FontSize="15" Width="300" Background="#84B153" materialDesign:TextFieldAssist.UnderlineBrush="#4A751C" materialDesign:HintAssist.Hint="Фамилия" CaretBrush="Black" Padding="4"/>
+        </Grid>
+
+        <Grid Grid.Row="8" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <PasswordBox Tag="{Binding PasswordExtra, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationFailed}" ToolTip="{Binding ErrorCollection[PasswordExtra]}" PasswordChanged="PasswordBox_PasswordChanged" x:Name="Password" FontSize="15" Width="300" Background="#84B153" materialDesign:TextFieldAssist.UnderlineBrush="#4A751C" materialDesign:HintAssist.Hint="Пароль" CaretBrush="Black" Padding="4"/>
+        </Grid>
+
+        <Grid Grid.Row="10" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <PasswordBox Tag="{Binding RepeatPasswordExtra, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationFailed}" ToolTip="{Binding ErrorCollection[RepeatPasswordExtra]}" PasswordChanged="PasswordBox_PasswordChanged_1" x:Name="RepeatPassword" FontSize="15" Width="300" Background="#84B153" materialDesign:TextFieldAssist.UnderlineBrush="#4A751C" materialDesign:HintAssist.Hint="Повторите пароль" CaretBrush="Black" Padding="4"/>
+        </Grid>
+
+        <Grid Grid.Row="11" Grid.ColumnSpan="3">
+            <TextBlock VerticalAlignment="Center" FontSize="14" TextAlignment="Center" Foreground="{Binding NotificationColor}" Text="{Binding NotificationText}"/>
+        </Grid>
+
+        <Grid Grid.Row="12" Grid.ColumnSpan="3" VerticalAlignment="Center">
+            <Button Height="35" Width="190" Command="{Binding signUp}" Content="Зарегистрироваться" FontSize="15" Background="#4A751C" BorderBrush="{x:Null}"/>
+        </Grid>
+    </Grid>
+</Window>

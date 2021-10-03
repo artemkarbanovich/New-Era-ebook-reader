@@ -1,0 +1,92 @@
+﻿<Window x:Class="Ebook_Reader.View.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Ebook_Reader.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Icon="../Image/AppIcon.png"
+        Title="New Era"
+        MinHeight="600" MinWidth="1200" Height="600" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        
+        <Grid Background="{DynamicResource Top-leftPannel_Color}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Height="70" Source="../Image/AppLogoMainWindow.png"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="{DynamicResource Top-leftPannel_Color}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+
+            <Grid Grid.Row="1" Width="160">
+                <Button Command="{Binding UpdateViewCommand}" CommandParameter="Library" Padding="10,0,0,0" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="Library" Foreground="{DynamicResource NavigationText_Color}" Width="20" Height="20"/>
+                        <TextBlock FontFamily="{DynamicResource Font}" FontSize="15.5" Text="Библиотека" Foreground="{DynamicResource NavigationText_Color}" Margin="7,0,0,0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="2" Width="160">
+                <Button Command="{Binding UpdateViewCommand}" CommandParameter="Statistics" Padding="10,0,0,0" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="ChartAreaspline" Foreground="{DynamicResource NavigationText_Color}" Width="20" Height="20"/>
+                        <TextBlock FontFamily="{DynamicResource Font}" FontSize="15.5" Text="Статистика" Foreground="{DynamicResource NavigationText_Color}" Margin="7,0,0,0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="3" Width="160">
+                <Button Command="{Binding UpdateViewCommand}" CommandParameter="Settings" Padding="10,0,0,0" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="Settings" Foreground="{DynamicResource NavigationText_Color}" Width="20" Height="20"/>
+                        <TextBlock FontFamily="{DynamicResource Font}" FontSize="15.5" Text="Настройки" Foreground="{DynamicResource NavigationText_Color}" Margin="7,0,0,0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="4" VerticalAlignment="Bottom" Height="35" Width="160">
+                <Button Command="{Binding aboutProgram}" Padding="10,0,0,0" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalContentAlignment="Left">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="About" Foreground="{DynamicResource NavigationText_Color}" Width="20" Height="20"/>
+                        <TextBlock FontFamily="{DynamicResource Font}" FontSize="15.5" Text="О программе" Foreground="{DynamicResource NavigationText_Color}" Margin="7,0,0,0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="3">
+            <StackPanel Height="30" Margin="0,0,0,7" HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Center">
+                <materialDesign:PackIcon VerticalAlignment="Center" Foreground="{DynamicResource NavigationText_Color}" Kind="Account" Width="20" Height="20"/>
+                <TextBlock  VerticalAlignment="Center" FontFamily="{DynamicResource Font}" FontSize="17" Foreground="{DynamicResource NavigationText_Color}" Text="{Binding User.Login}" Margin="3,0,20,0"/>
+            </StackPanel>
+            <Button Command="{Binding logOut}" FontFamily="{DynamicResource Font}" materialDesign:RippleAssist.Feedback="{x:Null}" VerticalAlignment="Bottom" Content="выйти" Height="29" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Foreground="{DynamicResource LogOutText_Color}" Margin="0,0,0,0"/>
+        </Grid>
+
+        <Grid Background="{DynamicResource MainPannel_Color}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+            <ContentControl Content="{Binding SelectedViewModel}"/>
+        </Grid>
+    </Grid>
+</Window>

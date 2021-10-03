@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ebook_Reader.ViewModel.AuthenticationViewModel" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIggBACAAAwAAQAACAgAAAIAAIAAAAAAQAAQghAAEAA=</HashCode>
+      <FileName>ViewModel\AuthenticationViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Ebook_Reader.ViewModel.MainWindowViewModel" Collapsed="true">
+    <Position X="3.75" Y="1.5" Width="2.25" />
+    <AssociationLine Name="User" Type="Ebook_Reader.Model.User" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="1.875" />
+        <Point X="11" Y="1.875" />
+        <Point X="11" Y="4" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAABAAAAAAAAAAAQBgAAAAQAAAAAAAAAEgAAAAAAAQA=</HashCode>
+      <FileName>ViewModel\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ebook_Reader.ViewModel.PdfViewModel" Collapsed="true">
+    <Position X="2.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAQAQAAEAABAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ViewModel\PdfViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.ViewModel.RegistrationViewModel" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAggAEgIAAhACQBADAgAAAIAgIAAAAAACAAQghAAEAA=</HashCode>
+      <FileName>ViewModel\RegistrationViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Ebook_Reader.ViewModel.SettingsViewModel" Collapsed="true">
+    <Position X="6.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQABGCAiiwAgIAIgAAAACAAAAAAAgAAQAAAAA=</HashCode>
+      <FileName>ViewModel\SettingsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.ViewModel.StatisticsViewModel" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="2.25" />
+    <AssociationLine Name="Statistics" Type="Ebook_Reader.Model.Statistics" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.062" Y="2.941" />
+        <Point X="5.062" Y="3.316" />
+        <Point X="9.25" Y="3.316" />
+        <Point X="9.25" Y="4" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACDIQEIAAAQAAMAEBQCgBAUAoARAIEwAAAAAQCAAgEA=</HashCode>
+      <FileName>ViewModel\StatisticsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Statistics" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ebook_Reader.ViewModel.TxtViewModel">
+    <Position X="0.5" Y="3.25" Width="1.75" />
+    <AssociationLine Name="Book" Type="Ebook_Reader.Model.Book" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="4.938" />
+        <Point X="6.75" Y="4.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAABAAABAQAQAQAAEAABgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\TxtViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ebook_Reader.ViewModel.LibraryViewModel" Collapsed="true">
+    <Position X="1.25" Y="2.25" Width="2.25" />
+    <AssociationLine Name="Books" Type="Ebook_Reader.Model.Book" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="2.941" />
+        <Point X="2.5" Y="3.188" />
+        <Point X="4.312" Y="3.188" />
+        <Point X="4.312" Y="4.562" />
+        <Point X="6.75" Y="4.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Book" Type="Ebook_Reader.Model.Book" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.688" Y="2.941" />
+        <Point X="2.688" Y="3.039" />
+        <Point X="4.446" Y="3.039" />
+        <Point X="4.446" Y="4.188" />
+        <Point X="6.75" Y="4.188" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.06" Y="0.11" Height="0.182" Width="0.647" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAEAAAAQQAAAEABQAASAQAQAgABEAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\LibraryViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Books" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Ebook_Reader.Model.Book">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIADAiAAAAAAAAAAAAAAAEQAAABEAAAAAQAwAAOAEAI=</HashCode>
+      <FileName>Model\Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.Model.Statistics">
+    <Position X="8.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIALAAAAAAQAAAAEAAAQAQAAAAEAAAAAAAAQAACAGAA=</HashCode>
+      <FileName>Model\Statistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.Model.User">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAEgAAABAAAAEAACBBAAAgUAAAABCGAAQEgAAEAA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.Command.UpdateViewCommand">
+    <Position X="11.25" Y="0.75" Width="2" />
+    <AssociationLine Name="viewModel" Type="Ebook_Reader.ViewModel.MainWindowViewModel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="1.688" />
+        <Point X="6" Y="1.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\UpdateViewCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="viewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Ebook_Reader.View.PdfView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:controls="clr-namespace:Ebook_Reader.Controls"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Ebook_Reader.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="{DynamicResource TxtDoc_BgColor}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="{DynamicResource Top-leftPannel_Color}" Grid.Row="0" Grid.Column="0" Margin="0,-80,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.3*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button materialDesign:RippleAssist.Feedback="{x:Null}" Padding="0" HorizontalContentAlignment="Center" Width="170" Background="{x:Null}" BorderBrush="{x:Null}" Command="{Binding stopRead}">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon Kind="Pause" Foreground="{DynamicResource NavigationText_Color}" Width="18" Height="18" VerticalAlignment="Center"/>
+                                <TextBlock FontFamily="{DynamicResource Font}" FontSize="13" Text="Завершить чтение" Foreground="{DynamicResource NavigationText_Color}" Margin="7,0,0,0"/>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <Grid Background="{DynamicResource Top-leftPannel_Color}" Grid.Row="0" Grid.Column="1" Margin="0,-80,0,0"/>
+
+
+            <Grid Background="{DynamicResource TxtDoc_BgColor}" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="-160,0,0,0">
+                <controls:PdfViewer PdfPath="{Binding PathToFile}"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

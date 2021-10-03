@@ -1,0 +1,41 @@
+﻿<Application x:Class="Ebook_Reader.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Ebook_Reader"
+             xmlns:view="clr-namespace:Ebook_Reader.View"
+             xmlns:viewmodels="clr-namespace:Ebook_Reader.ViewModel"
+             StartupUri="View/AuthenticationView.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/GreenTheme.xaml"/>
+                <ResourceDictionary Source="Theme/DarkTheme.xaml"/>
+                <ResourceDictionary Source="Theme/Fonts/SegoeUI.xaml"/>
+                <ResourceDictionary Source="Theme/Fonts/CourierNew.xaml"/>
+                <ResourceDictionary Source="Theme/Fonts/Corbel.xaml"/>
+                <ResourceDictionary Source="Theme/Fonts/SegoePrint.xaml"/>
+                <ResourceDictionary Source="Theme/Fonts/Verdana.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+            <DataTemplate DataType="{x:Type viewmodels:LibraryViewModel}">
+                <view:LibraryView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:StatisticsViewModel}">
+                <view:StatisticsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:TxtViewModel}">
+                <view:TxtView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:PdfViewModel}">
+                <view:PdfView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,113 @@
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\Ebook Reader.exe.config
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\Ebook Reader.exe
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\Ebook Reader.pdb
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\DevExpress.Mvvm.dll
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\DevExpress.Mvvm.UI.dll
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\EntityFramework.dll
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignColors.dll
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\System.Runtime.WindowsRuntime.dll
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\System.Windows.Interactivity.dll
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\Windows.winmd
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\DevExpress.Mvvm.pdb
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\DevExpress.Mvvm.UI.pdb
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\EntityFramework.xml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignColors.pdb
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignThemes.Wpf.xml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\bin\Release\System.Runtime.WindowsRuntime.xml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.csprojAssemblyReference.cache
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Theme\DarkTheme.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\CourierNew.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\SegoePrint.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\Corbel.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\SegoeUI.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\Verdana.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Theme\GreenTheme.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Controls\PdfViewer.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\AuthenticationView.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\LibraryView.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\MainWindowView.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\PdfView.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\RegistrationView.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\SettingsView.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\StatisticsView.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\TxtView.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\App.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader_MarkupCompile.cache
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader_MarkupCompile.lref
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\App.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Controls\PdfViewer.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\AuthenticationView.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\LibraryView.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\MainWindowView.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\PdfView.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\RegistrationView.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\SettingsView.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\StatisticsView.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\View\TxtView.baml
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.g.resources
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook_Reader.Properties.Resources.resources
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.csproj.GenerateResource.cache
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.csproj.CoreCompileInputs.cache
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.csproj.CopyComplete
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.exe
+C:\Users\Артем\source\repos\Course project OOP 4 semester\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.pdb
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\Ebook Reader.exe.config
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\Ebook Reader.exe
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\Ebook Reader.pdb
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\DevExpress.Mvvm.dll
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\DevExpress.Mvvm.UI.dll
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\EntityFramework.dll
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\EntityFramework.SqlServer.dll
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignColors.dll
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignThemes.Wpf.dll
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\System.Windows.Interactivity.dll
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\DevExpress.Mvvm.pdb
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\DevExpress.Mvvm.UI.pdb
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\EntityFramework.xml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\EntityFramework.SqlServer.xml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignColors.pdb
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignThemes.Wpf.pdb
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\bin\Release\MaterialDesignThemes.Wpf.xml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.csprojAssemblyReference.cache
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Theme\DarkTheme.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\CourierNew.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\SegoePrint.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\Corbel.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\SegoeUI.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Theme\Fonts\Verdana.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Theme\GreenTheme.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Controls\PdfViewer.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\AuthenticationView.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\LibraryView.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\MainWindowView.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\PdfView.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\RegistrationView.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\SettingsView.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\StatisticsView.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\TxtView.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\App.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader_MarkupCompile.cache
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader_MarkupCompile.lref
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\App.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Controls\PdfViewer.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\AuthenticationView.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\LibraryView.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\MainWindowView.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\PdfView.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\RegistrationView.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\SettingsView.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\StatisticsView.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\View\TxtView.baml
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.g.resources
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook_Reader.Properties.Resources.resources
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.csproj.GenerateResource.cache
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.csproj.CoreCompileInputs.cache
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.csproj.CopyComplete
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.exe
+D:\Лабы\ООП\ООП 4 СЕМ\Курсовой проект СТПМС, Карбанович\Ebook Reader\Ebook Reader\obj\Release\Ebook Reader.pdb

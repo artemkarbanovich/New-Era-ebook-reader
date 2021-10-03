@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ebook_Reader.DataBase.BookDB">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAACEAAAIAAQAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataBase\BookDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.DataBase.BookHistoryDB">
+    <Position X="11.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataBase\BookHistoryDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.DataBase.SettingsDB">
+    <Position X="8.75" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABAAACAAAAA=</HashCode>
+      <FileName>DataBase\SettingsDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.DataBase.StatisticsDB">
+    <Position X="6" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>DataBase\StatisticsDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.DataBase.UserDB">
+    <Position X="0.5" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAAAAAAAAAAAAAAAAAgAAAAAAAQAAAAA=</HashCode>
+      <FileName>DataBase\UserDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ebook_Reader.Model.Book">
+    <Position X="3.25" Y="3" Width="2.5" />
+    <AssociationLine Name="Users" Type="Ebook_Reader.Model.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="8.021" />
+        <Point X="4.5" Y="8.402" />
+        <Point X="3" Y="8.402" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="0.64" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IIADAiAAAAAAAAAAAAAAAEQAAABEAAAAAQAwAAOAEAI=</HashCode>
+      <FileName>Model\Book.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Users" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Ebook_Reader.Model.BookHistory">
+    <Position X="11.5" Y="3.5" Width="2.5" />
+    <AssociationLine Name="Users" Type="Ebook_Reader.Model.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.75" Y="7.175" />
+        <Point X="12.75" Y="8.782" />
+        <Point X="12.583" Y="8.782" Type="JumpStart" />
+        <Point X="12.417" Y="8.782" Type="JumpEnd" />
+        <Point X="10.083" Y="8.782" Type="JumpStart" />
+        <Point X="9.917" Y="8.782" Type="JumpEnd" />
+        <Point X="9.833" Y="8.782" Type="JumpStart" />
+        <Point X="9.667" Y="8.782" Type="JumpEnd" />
+        <Point X="8.395" Y="8.782" Type="JumpStart" />
+        <Point X="8.229" Y="8.782" Type="JumpEnd" />
+        <Point X="7.333" Y="8.782" Type="JumpStart" />
+        <Point X="7.167" Y="8.782" Type="JumpEnd" />
+        <Point X="5.583" Y="8.782" Type="JumpStart" />
+        <Point X="5.417" Y="8.782" Type="JumpEnd" />
+        <Point X="3" Y="8.782" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IIACACAAAAAAAAAAAAAAAAQAAAAEAAAAAQAQAAGAEAA=</HashCode>
+      <FileName>Model\BookHistory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Users" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Ebook_Reader.Model.Settings">
+    <Position X="8.75" Y="3.5" Width="2.5" />
+    <AssociationLine Name="User" Type="Ebook_Reader.Model.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="7.175" />
+        <Point X="10" Y="9.107" />
+        <Point X="9.833" Y="9.107" Type="JumpStart" />
+        <Point X="9.667" Y="9.107" Type="JumpEnd" />
+        <Point X="8.395" Y="9.107" Type="JumpStart" />
+        <Point X="8.229" Y="9.107" Type="JumpEnd" />
+        <Point X="7.333" Y="9.107" Type="JumpStart" />
+        <Point X="7.167" Y="9.107" Type="JumpEnd" />
+        <Point X="5.583" Y="9.107" Type="JumpStart" />
+        <Point X="5.417" Y="9.107" Type="JumpEnd" />
+        <Point X="3" Y="9.107" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAACJAAAggQAAIAAAAAQAAAAAAAAAAQAAAAEAA=</HashCode>
+      <FileName>Model\Settings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ebook_Reader.Model.Statistics">
+    <Position X="6" Y="3.5" Width="2.5" />
+    <AssociationLine Name="User" Type="Ebook_Reader.Model.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="7.559" />
+        <Point X="7.25" Y="9.432" />
+        <Point X="5.583" Y="9.432" Type="JumpStart" />
+        <Point X="5.417" Y="9.432" Type="JumpEnd" />
+        <Point X="3" Y="9.432" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIALAAAAAAQAAAAEAAAQAQAAAAEAAAAAAAAQAACAGAA=</HashCode>
+      <FileName>Model\Statistics.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ebook_Reader.Model.User">
+    <Position X="0.5" Y="4.5" Width="2.5" />
+    <AssociationLine Name="UserSettings" Type="Ebook_Reader.Model.Settings" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.062" Y="9.521" />
+        <Point X="1.062" Y="11.339" />
+        <Point X="9.75" Y="11.339" />
+        <Point X="9.75" Y="7.175" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Books" Type="Ebook_Reader.Model.Book" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.312" Y="9.521" />
+        <Point X="1.312" Y="10.15" />
+        <Point X="5.5" Y="10.15" />
+        <Point X="5.5" Y="8.021" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="BooksHistory" Type="Ebook_Reader.Model.BookHistory" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.875" Y="9.521" />
+        <Point X="0.875" Y="11.539" />
+        <Point X="12.5" Y="11.539" />
+        <Point X="12.5" Y="7.175" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Statistics" Type="Ebook_Reader.Model.Statistics" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.688" Y="9.521" />
+        <Point X="0.688" Y="11.016" />
+        <Point X="0.792" Y="11.016" Type="JumpStart" />
+        <Point X="0.958" Y="11.016" Type="JumpEnd" />
+        <Point X="0.979" Y="11.016" Type="JumpStart" />
+        <Point X="1.145" Y="11.016" Type="JumpEnd" />
+        <Point X="8.312" Y="11.016" />
+        <Point X="8.312" Y="7.559" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAACAEgAAABAAAAEAACBBAAAgUAAAABCGAAQEgAAEAA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserSettings" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Books" />
+      <Property Name="BooksHistory" />
+      <Property Name="Statistics" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

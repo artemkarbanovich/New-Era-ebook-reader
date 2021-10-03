@@ -1,0 +1,68 @@
+﻿<Window x:Class="Ebook_Reader.View.AuthenticationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Ebook_Reader.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Icon="../Image/AppIcon.png"
+        Title="Вход"
+        Height="400" Width="450" ResizeMode="NoResize">
+    <Window.Resources>
+        <ControlTemplate x:Key="validationFailed">
+            <Border BorderBrush="OrangeRed" BorderThickness="1.5">
+                <AdornedElementPlaceholder/>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
+    
+    <Grid Background="#BAD899">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Image Source="../Image/AppLogo.png" Grid.Row="1" Grid.Column="1"/>
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <materialDesign:PackIcon Kind="Person" Width="25" Height="25" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox Text="{Binding Login, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Validation.ErrorTemplate="{StaticResource validationFailed}" ToolTip="{Binding ErrorCollection[Login]}" FontSize="15" Width="300" Background="#84B153" materialDesign:TextFieldAssist.UnderlineBrush="#4A751C" materialDesign:HintAssist.Hint="Логин" CaretBrush="Black" Padding="4"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <materialDesign:PackIcon Kind="Password" Width="25" Height="25" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <PasswordBox materialDesign:HintAssist.Hint="Пароль" Tag="{Binding PasswordExtra, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationFailed}" ToolTip="{Binding ErrorCollection[PasswordExtra]}" PasswordChanged="PasswordBox_PasswordChanged" Width="300" FontSize="15" Background="#84B153" materialDesign:TextFieldAssist.UnderlineBrush="#4A751C" CaretBrush="Black" Padding="4"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="6" Grid.ColumnSpan="3">
+            <TextBlock VerticalAlignment="Center" FontSize="14" TextAlignment="Center" Foreground="{Binding NotificationColor}" Text="{Binding NotificationText}"/>
+        </Grid>
+        
+        <Grid Grid.Row="7" Grid.Column="1">
+            <Button Command="{Binding signIn}" Content="Войти" FontSize="15" Background="#4A751C" BorderBrush="{x:Null}"/>
+        </Grid>
+
+        <Grid Grid.Row="9" Grid.Column="2" VerticalAlignment="Center">
+            <Button Width="120" Command="{Binding signUpWindow}" Content="Регистрация" FontSize="15"  Background="{x:Null}" Foreground="Gray" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="{x:Null}"/>
+        </Grid>
+    </Grid>
+</Window>

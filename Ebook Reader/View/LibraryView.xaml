@@ -1,0 +1,110 @@
+﻿<UserControl x:Class="Ebook_Reader.View.LibraryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:local="clr-namespace:Ebook_Reader.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="490" d:DesignWidth="1050">
+    <Grid Background="{DynamicResource MainPannel_Color}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.2*"/>
+            <ColumnDefinition Width="1.1*"/>
+            <ColumnDefinition Width="1.3*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="1.3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Margin="0,-50,0,0" Background="{DynamicResource Top-leftPannel_Color}">
+            <Button Command="{Binding addBookToLibrary}" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalContentAlignment="Left" materialDesign:RippleAssist.Feedback="{x:Null}">
+                <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
+                    <materialDesign:PackIcon VerticalAlignment="Center" Kind="Plus" Height="18" Width="18" Foreground="{DynamicResource AddBook_Color}"/>
+                    <TextBlock FontFamily="{DynamicResource Font}" Text="Добавить книгу" FontSize="13" Margin="4,0,0,0" Foreground="{DynamicResource AddBook_Color}"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1" Margin="0,-50,0,0" Background="{DynamicResource Top-leftPannel_Color}">
+            <Button Command="{Binding deleteBookFromLibrary}" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalContentAlignment="Left" materialDesign:RippleAssist.Feedback="{x:Null}">
+                <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
+                    <materialDesign:PackIcon VerticalAlignment="Center" Kind="Delete" Foreground="{DynamicResource DeleteBook_Color}" Height="18" Width="18"/>
+                    <TextBlock Text="Удалить книгу" FontFamily="{DynamicResource Font}" FontSize="13" Margin="4,0,0,0" Foreground="{DynamicResource DeleteBook_Color}"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="2" Margin="0,-50,0,0" Background="{DynamicResource Top-leftPannel_Color}">
+            <TextBox FontFamily="{DynamicResource Font}" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" Background="{DynamicResource SearchBox_BgColor}" Height="30" FontSize="15" materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SearchBox_UlColor}" materialDesign:HintAssist.Hint="Поиск в библиотеке" CaretBrush="Black" Padding="4"/>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="4" Margin="0,-50,0,0" Background="{DynamicResource Top-leftPannel_Color}">
+            <ComboBox FontFamily="{DynamicResource Font}" Text="{Binding SortText, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Сортировка" Background="{DynamicResource SearchBox_BgColor}" Height="30" FontSize="15" Padding="4" materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource SearchBox_UlColor}">
+                <ComboBoxItem Content="По умолчанию"/>
+                <ComboBoxItem Content="По возрастанию"/>
+                <ComboBoxItem Content="По убыванию"/>
+                <ComboBoxItem Content="Только txt файлы"/>
+                <ComboBoxItem Content="Только pdf файлы"/>
+            </ComboBox>
+        </Grid>
+        
+        <Grid Grid.Row="1" Grid.ColumnSpan="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3.5*"/>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" BorderBrush="{DynamicResource BooksBorderBrush_Color}" BorderThickness="0,0,1.5,1.5">
+                <TextBlock FontFamily="{DynamicResource Font}" Grid.Column="0" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource BooksList_Color}" Margin="18,0,0,0" FontSize="16" Text="Название книги"/>
+            </Border>
+            <Border Grid.Column="1" BorderBrush="{DynamicResource BooksBorderBrush_Color}" BorderThickness="0,0,1.5,1.5">
+                <TextBlock FontFamily="{DynamicResource Font}" Grid.Column="1" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" Foreground="{DynamicResource BooksList_Color}" FontSize="16" Text="Дата добавления"/>
+            </Border>
+            <Border Grid.Column="2" BorderBrush="{DynamicResource BooksBorderBrush_Color}" BorderThickness="0,0,0,1.5">
+                <TextBlock FontFamily="{DynamicResource Font}" Grid.Column="2" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" Foreground="{DynamicResource BooksList_Color}" FontSize="16" Text="Формат книги"/>
+            </Border>
+        </Grid>
+        
+        <Grid Grid.Row="2" Grid.ColumnSpan="6">
+            <ListBox ScrollViewer.CanContentScroll="False" HorizontalContentAlignment="Stretch" ItemsSource="{Binding FilteredBooks, UpdateSourceTrigger=Explicit}" SelectedItem="{Binding Book}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseDoubleClick">
+                        <i:InvokeCommandAction Command="{Binding openDocumentReader}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3.5*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+
+                            
+                            <StackPanel VerticalAlignment="Center" Grid.Column="0">
+                                <TextBlock FontFamily="{DynamicResource Font}" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="{DynamicResource BooksList_Color}" FontSize="14" Text="{Binding Path=Name}"/>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" Grid.Column="1">
+                                <TextBlock FontFamily="{DynamicResource Font}" Foreground="{DynamicResource BooksList_Color}" HorizontalAlignment="Center" FontSize="14" Text="{Binding Path=DateAdded, StringFormat=dd.MM.yyyy HH:mm}"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="0" VerticalAlignment="Center" Grid.Column="2">
+                                <TextBlock FontFamily="{DynamicResource Font}" HorizontalAlignment="Center" Foreground="{DynamicResource BooksList_Color}" FontSize="14" Text="{Binding Path=BookFormat}"/>
+                            </StackPanel>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+</UserControl>
